@@ -4,13 +4,13 @@ pipeline {
     stages {   
         stage('Build with maven') {
             steps {
-                sh 'cd SampleWebApp && mvn clean install'
+                sh 'cd WebApplication && mvn clean install'
             }
         }
         
              stage('Test') {
             steps {
-                sh 'cd SampleWebApp && mvn test'
+                sh 'cd WebApplication && mvn test'
             }
         
             }
@@ -18,7 +18,7 @@ pipeline {
 
            steps {
                   withSonarQubeEnv('sonar-server') {
-             sh "mvn -f SampleWebApp/pom.xml sonar:sonar"      
+             sh "mvn -f WebApplication/pom.xml sonar:sonar"      
                }
             }
        }

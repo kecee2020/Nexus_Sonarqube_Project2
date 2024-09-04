@@ -2,7 +2,7 @@
   <head>
     <title>Welcome to my web page</title>
   </head>
-  <body bgcolor="#33333">
+  <body bgcolor="#FFD700">
     <h1>Hello from january group is the best yes it is bad and egg</h1>
     <!--Form declaration. Must have an action attribute -->
         <form action="C:/JonnyJava/FirstJava.html/profile.html" method="post">
